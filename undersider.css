@@ -40,6 +40,16 @@ h3 {
   margin-top: 5%;
 }
 
+h4 {
+  font-size: 1.5rem;
+  padding-bottom: 5%;
+}
+
+h5 {
+  font-size: 1rem;
+
+  font-family: "Nunito", sans-serif;
+}
 .tekst {
   font-family: "Nunito", sans-serif;
   background-color: #fef6de;
@@ -75,6 +85,12 @@ h3 {
 
   place-self: center;
   padding: 3rem;
+}
+/********** grid mobil *******/
+.grid_ul {
+  display: grid;
+  gap: 5%;
+  margin-bottom: 5%;
 }
 
 /********************************* skærm over 700 px **********************/
@@ -123,10 +139,6 @@ h3 {
     color: azure;
     font-size: 3rem;
     margin-top: 5%;
-  }
-  h4 {
-    font-size: 1.5rem;
-    padding-bottom: 5%;
   }
 
   /************* IMG / billeder css *******/
