@@ -1,0 +1,223 @@
+/********** generelt**********/
+
+main {
+  max-width: 1200px;
+  height: 100%;
+  margin: 0 5%;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: rgb(22, 56, 95);
+  background: linear-gradient(180deg, rgba(22, 56, 95, 1) 18%, rgba(76, 66, 155, 1) 38%, rgba(135, 107, 201, 1) 57%, rgba(235, 197, 158, 1) 84%);
+  /*overflow: hidden;*/
+  background-repeat: no-repeat;
+  background-size: fill;
+  height: 100%;
+  background-attachment: fixed;
+  /*display: flex;
+  flex-direction: column;*/
+}
+/******** footer **************/
+@media (max-width: 700px) {
+  .footer_lang {
+    display: none;
+  }
+}
+
+footer {
+  /* background-image: url(eksamen_elementer/footer_lang.svg); */
+  background-size: contain;
+  z-index: 100;
+  background-repeat: no-repeat;
+  margin-top: auto;
+}
+
+.footer_tekst {
+  /* display: grid;
+  grid-template-rows: 1fr 1fr; */
+  color: azure;
+  text-align: center;
+  position: absolute;
+  bottom: -90%;
+  left: 50%;
+  font-family: "Nunito", sans-serif;
+  transform: translateX(-50%);
+  /**** får footer halvdelen af footer teksten til at starter før midten af siden så den ikke starter fra midten */
+}
+
+#footer_index_tekst {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  color: azure;
+  text-align: center;
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  font-family: "Nunito", sans-serif;
+  transform: translateX(-50%);
+  /**** får footer halvdelen af footer teksten til at starter før midten af siden så den ikke starter fra midten */
+}
+#footer_index {
+  background-size: contain;
+  z-index: 100;
+  background-repeat: no-repeat;
+  position: absolute;
+  bottom: 0;
+}
+
+/************* moon forside mobil ************/
+.moon_mobil {
+  position: relative;
+  width: 30%;
+  aspect-ratio: 100/156;
+}
+.moon_mobil_container {
+  display: grid;
+  place-items: center;
+}
+
+/********* moon om mig side *****/
+.moon_om_mig {
+  width: 20%;
+  aspect-ratio: 100/156;
+  margin-top: 7%;
+  margin-bottom: 7%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/***************** forside indhold ***********/
+
+.forside_grid {
+  display: grid;
+  justify-content: center;
+  gap: 20%;
+  margin: 15%;
+}
+.forside_grid_tekst {
+  display: grid;
+  gap: 20%;
+  text-align: center;
+  color: azure;
+}
+
+.portfolio {
+  font-family: "Fredericka the Great", cursive;
+  container-type: inline-size;
+  font-size: 7cqw;
+}
+
+.navn {
+  display: grid;
+  gap: 25%;
+  container-type: inline-size;
+  font-size: 3.7cqw;
+  font-family: "Fredericka the Great", cursive;
+}
+
+/*************** skærm over 700 px **********/
+
+@media (min-width: 700px) {
+  main {
+    max-width: 1200px;
+    margin: 0 5%;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  /********** FOOTER ***********/
+  .footer_kort {
+    display: none;
+  }
+
+  /*********** mooon forside animation og placement ***********/
+  .moon {
+    aspect-ratio: 5/1;
+    z-index: 10;
+  }
+  .pop_op {
+    animation-name: pop_op_kf;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-fill-mode: both;
+  }
+  @keyframes pop_op_kf {
+    0% {
+    }
+
+    100% {
+      top: 30%;
+    }
+  }
+
+  #moon_container {
+    position: absolute;
+    width: 10%;
+    aspect-ratio: 100/156;
+    top: 100%;
+    left: 74%;
+  }
+
+  #moon_sprite {
+    width: 100%;
+    height: 100%;
+    background-image: url(eksamen_elementer/moon.svg);
+    background-size: cover;
+  }
+  .moon_mobil {
+    display: none;
+  }
+  .moon_mobil_container {
+    display: grid;
+    order: 1;
+  }
+
+  /******** forside web *********/
+  .forside_grid {
+    display: grid;
+    justify-content: left;
+    gap: 20%;
+    margin: 8%;
+  }
+  .forside_grid_tekst {
+    display: grid;
+    gap: 20%;
+    text-align: center;
+    color: azure;
+    order: 1;
+  }
+  .portfolio {
+    container-type: inline-size;
+    font-size: 7cqw;
+  }
+
+  .navn {
+    display: grid;
+    gap: 1%;
+    container-type: inline-size;
+    font-size: clamp(1rem, 10vw, 2rem);
+    text-align: start;
+  }
+}

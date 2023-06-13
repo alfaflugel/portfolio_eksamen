@@ -1,0 +1,196 @@
+/********* knap *********/
+
+.knap {
+  margin-left: auto;
+  margin-right: auto;
+  width: 17rem;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+/************ IMG / billeder mobil ******/
+.tema2_img {
+  border-radius: 50px;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+.svg {
+  border-radius: 50px;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+/***** Streg *****/
+hr {
+  border: none;
+  height: 2px;
+  border-top: 6px solid #de61a9;
+  overflow: visible;
+  text-align: center;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+/************** Copy ***************/
+h3 {
+  font-family: "Fredericka the Great", cursive;
+  text-align: center;
+  color: azure;
+  font-size: 2.3rem;
+  margin-top: 5%;
+}
+
+.tekst {
+  font-family: "Nunito", sans-serif;
+  background-color: #fef6de;
+  border-radius: 50px;
+
+  line-height: 2rem;
+  margin-top: 5%;
+  align-self: center;
+  place-self: center;
+  padding: 3rem;
+}
+
+.tekst_lang {
+  font-family: "Nunito", sans-serif;
+  background-color: #fef6de;
+  border-radius: 50px;
+
+  line-height: 2rem;
+
+  margin-bottom: 5%;
+
+  place-self: center;
+  padding: 3rem;
+}
+
+.tekst_bred {
+  font-family: "Nunito", sans-serif;
+  background-color: #fef6de;
+  border-radius: 50px;
+  line-height: 2rem;
+
+  margin-bottom: 5%;
+
+  place-self: center;
+  padding: 3rem;
+}
+
+/********************************* skærm over 700 px **********************/
+
+@media (min-width: 700px) {
+  /*********** Top grid på alle tema siderne ****/
+
+  .tekst {
+    place-self: center;
+    padding: 3rem;
+  }
+
+  /********* COPY web *******/
+  h3 {
+    font-family: "Fredericka the Great", cursive;
+    text-align: center;
+    color: azure;
+    font-size: 3rem;
+    margin-top: 0%;
+  }
+
+  .tekst_lang {
+    font-family: "Nunito", sans-serif;
+    background-color: #fef6de;
+    border-radius: 50px;
+    line-height: 2rem;
+    place-self: center;
+    padding: 2.3rem;
+    margin: 0%;
+  }
+
+  .tekst_bred {
+    font-family: "Nunito", sans-serif;
+    background-color: #fef6de;
+    border-radius: 50px;
+    line-height: 2rem;
+
+    place-self: center;
+    padding: 3rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .om_mig {
+    font-family: "Fredericka the Great", cursive;
+    text-align: center;
+    color: azure;
+    font-size: 3rem;
+    margin-top: 5%;
+  }
+  h4 {
+    font-size: 1.5rem;
+    padding-bottom: 5%;
+  }
+
+  /************* IMG / billeder css *******/
+
+  .tema2_img {
+    border-radius: 50px;
+    margin: 0%;
+  }
+  .svg {
+    border-radius: 50px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+
+  #profilbillede {
+    width: 35rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /***************** grid ***********/
+
+  .grid_1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5%;
+    margin-bottom: 5%;
+  }
+  .grid_1_2 {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 5%;
+  }
+  .grid_1 {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 5%;
+  }
+
+  #grid_tema3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5%;
+    margin-bottom: 5%;
+  }
+  .grid_img {
+    display: grid;
+    gap: 5%;
+  }
+  .grid_img2 {
+    display: grid;
+    gap: 5%;
+    margin-top: 5%;
+  }
+
+  .top_grid {
+    display: grid;
+
+    margin-top: 5%;
+  }
+
+  /******* knap *********/
+
+  .knap {
+    width: 20rem;
+  }
+}
